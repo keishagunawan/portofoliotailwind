@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-slate-700 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="font-semibold text-xl">MyWebsite</span>
+            <button
+                onclick="toggleMenu()"
+                class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300 md:hidden"
+            ></button>
+            <div class="hidden md:flex">
+                <a
+                    href="index.html#aboutme"
+                    class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+                    >About</a
+                >
+                <a
+                    href="index.html#certificate"
+                    class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+                    >Certificate</a
+                >
+                <a
+                    href="index.html#portfolio"
+                    class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+                    >Portfolio</a
+                >
+                <a
+                    href="index.html#suggest"
+                    class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+                    >Suggest</a
+                >
+                <a
+                    href="contact.html"
+                    class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+                    >Contact</a
+                >
+            </div>
+        </div>
+        <div id="navbar" class="hidden md:hidden">
+            <a
+                    href="index.html#aboutme"
+                    class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+                    >About</a
+                >
+                <a
+                    href="index.html#certificate"
+                    class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+                    >Certificate</a
+                >
+                <a
+                    href="index.html#portfolio"
+                    class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+                    >Portfolio</a
+                >
+                <a
+                    href="index.html#suggest"
+                    class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+                    >Suggest</a
+                >
+                <a
+                    href="contact.html"
+                    class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+                    >Contact</a
+                >
+        </div>
+    </nav>
+
+    <section id="home" class="py-12 px-4 grid grid-rows-3 gap-3">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <a href="https://www.linkedin.com/in/keisha-gunawan">
+                <img src="assets/linkedin.png" width="30px"/>
+                LinkedIn</a>
+          </button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <a href="https://www.instagram.com/keishagunawann/">
+                <img src="assets/instagram.png" width="30px"/>
+                Instagram</a>
+          </button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <a href="mailto:anastasia.keisha04@gmail.com">
+                <img src="assets/gmail.jpeg" width="30px"/>
+                Email</a>
+          </button>
+       
+    </section>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Menubar -->
+		<nav class="bg-slate-700 text-white p-4">
+			<div class="container mx-auto flex justify-between items-center">
+				<span class="font-semibold text-xl">MyWebsite</span>
+				<button
+					onclick="toggleMenu()"
+					class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300 md:hidden"
+				></button>
+				<div class="hidden md:flex">
+					<a
+						href="index.html#aboutme"
+						class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+						>About</a
+					>
+					<a
+						href="index.html#certificate"
+						class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+						>Certificate</a
+					>
+					<a
+						href="index.html#portfolio"
+						class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+						>Portfolio</a
+					>
+                    <a
+						href="index.html#suggest"
+						class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+						>Suggest</a
+					>
+                    <a
+						href="contact.html"
+						class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+						>Contact</a
+					>
+				</div>
+			</div>
+			<div id="navbar" class="hidden md:hidden">
+				<a
+						href="index.html#aboutme"
+						class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+						>About</a
+					>
+					<a
+						href="index.html#certificate"
+						class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+						>Certificate</a
+					>
+					<a
+						href="index.html#portfolio"
+						class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+						>Portfolio</a
+					>
+                    <a
+						href="index.html#suggest"
+						class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+						>Suggest</a
+					>
+                    <a
+						href="contact.html"
+						class="text-white px-4 py-2 hover:bg-gray-700 rounded transition duration-300"
+						>Contact</a
+					>
+			</div>
+		</nav>
+
+    <!--HOME-->
+    <section id="home" class="py-12 px-4">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 flex flex-col items-center">
+            <div>
+            <h2 class="text-3xl font-bold mb-4">Hi, I'm Keisha Gunawan</h2>
+            <p class="text-lg">I am currently in my second-year pursuing a bachelor's degree majoring in Information Systems at Universitas Pelita Harapan. I am deeply passionate about Web Design and Database Management. My dedication and strong work ethic drive me to constantly seek new knowledge and skills, making me a committed and enthusiastic learner.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Download CV
+              </button>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <img class="justify-center" src="assets/bgtrans.png" width="60%"/>
+            </div>
+        </div>
+       
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1F5F9" fill-opacity="1" d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,208C672,213,768,267,864,245.3C960,224,1056,128,1152,122.7C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <!--ABOUT-->
+    <section id="about" class="py-12 px-4 bg-slate-100">
+        <h2 class="max-w-4xl mx-auto text-3xl font-bold mb-4 text-center">About</h2>
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 text-center">
+            <div>
+                <p class="font-bold">Education<p>
+              <ul>Universitas Pelita Harapan
+                <br>Bachelor of Information Systems</ul><br>
+              <ul>SMA Regina Pacis Bogor
+                <br>Senior High School, Science</ul><br>
+            </div>
+
+            <div>
+                <p class="font-bold">Experience</p>
+              <ul >HMPSSI
+                <br>Coordinator of External Division</ul><br>
+              <ul>Company Visit 2023
+                <br>Coordinator of Publication Registration</ul><br>
+              <ul>Falcon Project 12
+                <br>Event Division</ul><br>
+              <ul>Gathering Information Systems 2023
+                <br>Coordinator of Logistic and Preparation</ul><br>
+            </div>
+
+            <div>
+                <p class="font-bold">Competition</p>
+              <ul>Lomba Karya Tulis Ilmiah 
+                <br>Universitas Borobudur</ul><br>
+              <ul>Data Analytics Competition 2023
+                <br>Institut Teknologi Sepuluh Nopember</ul><br>
+              <ul>Digital Marketing Competition 
+                <br>FEB Universitas Indonesia</ul>
+            </div>
+        </div>
+    </section>
+
+    <svg class="bg-slate-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E2E8F0" fill-opacity="1" d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,208C672,213,768,267,864,245.3C960,224,1056,128,1152,122.7C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    
+    <!--Certificate-->
+    <section id="certificate" class="py-12 px-4 bg-slate-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-center">Certificates</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="shadow-lg p-4 bg-white">
+                    <img
+                        src="https://64.media.tumblr.com/d959941734498250abbe2581763ac311/tumblr_pyl4ixzXTQ1ta0hnbo1_1280.jpg"
+                        alt="Certificate 1"
+                        class="mb-3"
+                    />
+                    <p>Deskripsi Sertifikat 1</p>
+                </div>
+                
+                <div class="shadow-lg p-4 bg-white">
+                    <img
+                        src="https://64.media.tumblr.com/d959941734498250abbe2581763ac311/tumblr_pyl4ixzXTQ1ta0hnbo1_1280.jpg"
+                        alt="Certificate 1"
+                        class="mb-3"
+                    />
+                    <p>Deskripsi Sertifikat 1</p>
+                </div>
+
+                <div class="shadow-lg p-4 bg-white">
+                    <img
+                        src="https://64.media.tumblr.com/d959941734498250abbe2581763ac311/tumblr_pyl4ixzXTQ1ta0hnbo1_1280.jpg"
+                        alt="Certificate 1"
+                        class="mb-3"
+                    />
+                    <p>Deskripsi Sertifikat 1</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <svg class="bg-slate-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f6" fill-opacity="1" d="M0,96L80,96C160,96,320,96,480,117.3C640,139,800,181,960,197.3C1120,213,1280,203,1360,197.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
+    <!--Portofolio-->
+    <section id="portfolio" class="py-12 px-4 bg-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-center">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="shadow-lg p-4 bg-white">
+                    <img
+                        src="https://startupstockphotos.com/wp-content/uploads/2023/02/ssp-work-tech-0010-500x330.jpg"
+                        alt="Project 1"
+                        class="mb-3"
+                    />
+                    <p>Deskripsi Project 1</p>
+                </div>
+                
+                <div class="shadow-lg p-4 bg-white">
+                    <img
+                        src="https://startupstockphotos.com/wp-content/uploads/2023/02/ssp-work-tech-0010-500x330.jpg"
+                        alt="Project 1"
+                        class="mb-3"
+                    />
+                    <p>Deskripsi Project 1</p>
+                </div>
+
+                <div class="shadow-lg p-4 bg-white">
+                    <img
+                        src="https://startupstockphotos.com/wp-content/uploads/2023/02/ssp-work-tech-0010-500x330.jpg"
+                        alt="Project 1"
+                        class="mb-3"
+                    />
+                    <p>Deskripsi Project 1</p>
+                </div>
+
+                <div class="shadow-lg p-4 bg-white">
+                    <img
+                        src="https://startupstockphotos.com/wp-content/uploads/2023/02/ssp-work-tech-0010-500x330.jpg"
+                        alt="Project 1"
+                        class="mb-3"
+                    />
+                    <p>Deskripsi Project 1</p>
+                </div>
+
+                <div class="shadow-lg p-4 bg-white">
+                    <img
+                        src="https://startupstockphotos.com/wp-content/uploads/2023/02/ssp-work-tech-0010-500x330.jpg"
+                        alt="Project 1"
+                        class="mb-3"
+                    />
+                    <p>Deskripsi Project 1</p>
+                </div>
+
+                <div class="shadow-lg p-4 bg-white">
+                    <img
+                        src="https://startupstockphotos.com/wp-content/uploads/2023/02/ssp-work-tech-0010-500x330.jpg"
+                        alt="Project 1"
+                        class="mb-3"
+                    />
+                    <p>Deskripsi Project 1</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <svg class="bg-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8fafc" fill-opacity="1" d="M0,320L48,288C96,256,192,192,288,186.7C384,181,480,235,576,234.7C672,235,768,181,864,165.3C960,149,1056,171,1152,186.7C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+    <!--Suggest-->
+    <section id="suggest" class="py-12 px-4 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-4 text-center">Suggest</h2>
+<form>
+    <div class="space-y-12">
+        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+          <div class="sm:col-span-4">
+            <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Email Address</label>
+            <div class="mt-2">
+              <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                <input type="text" name="username" id="username" autocomplete="username" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-span-full">
+            <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Comment</label>
+            <div class="mt-2">
+              <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Submit
+          </button>
+    </section>
+
+    <!--CONTACT-->
+
+</body>
+</html>
